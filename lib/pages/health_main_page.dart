@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:health_app/pages/health_home_page.dart';
 import 'package:health_app/utils/color.dart';
 import 'package:iconsax/iconsax.dart';
+import 'doctor_schedule_page.dart';
 
 class HealthMainPage extends StatefulWidget {
   const HealthMainPage({super.key});
@@ -15,9 +16,7 @@ class _HealthMainPageState extends State<HealthMainPage> {
 
   final List pages = [
     HealthHomePage(),
-    Scaffold(
-      body: Center(child: Text("Calender"),),
-    ),
+    DoctorSchedulePage(),
     Scaffold(
       body: Center(child: Text("Message"),),
     ),
